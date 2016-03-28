@@ -1,0 +1,29 @@
+.body1 {
+  background-color: #add8e6;
+}
+​
+button {
+  margin-top: 3%;
+  padding: 15px;
+  font-family: sans-serif;
+
+}
+
+.form-control{
+  width: 50%;
+}
+​
+#output {
+  display: none;
+}
+​
+#snakeIsland, #alnwickPoisonGardens, #yungasRoad, #home {
+  display: none;
+}
+#results{
+  display: none;
+}
+
+.hello{
+  display: none;
+}

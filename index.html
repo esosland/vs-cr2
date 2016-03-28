@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+  <head>
+
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" media="screen">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/scripts.js"></script>
+
+  <title>Vacation Suggester</title>
+
+  </head>
+
+  <body class="body1">
+    <div class="container1">
+    <h1>Need a vacation but not sure where to go? Fill out our survey and we’ll make a suggestion just for you based on your answers!</h1>
+
+    <p>We want to make this experience feel personalized! This vacation suggestion is just for you!</p>
+
+
+
+    <p>Ok, here goes!</p>
+
+
+  <!-- Form Inputs -->
+  <div class="container2">
+    <form id="vacaySuggestion">
+      <ol>
+        <li><p>What sounds the most appealing to you right now?</p>
+          <select class="form-control" id="preference">
+            <option>Select One</option>
+            <option value="3">Hitting the gym. Yo, do you even lift, bro?</option>
+            <option value="4">Watching a movie or maybe even binging a TV show I've been meaning to get to</option>
+            <option value="2">Trivia! I like to know fun facts.</option>
+            <option value="1">Danger. It's my middle name. And it's exciting.</option>
+          </select>
+        </li>
+
+        <li>What kind of activity have you been craving lately?</li>
+        <div class="radio">
+          <label>
+            <input type="radio" name="activity" value="2" id="activity">
+              Learning something new, like at a museum or interactive exhibit
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="activity" value="3" id="activity">
+            Doing something active! I love to be moving around!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="activity" value="4" id="activity">
+            Bed. That's an activity, right?
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="activity" value="1" id="activity">
+            Being outdoors and in nature; getting out of the city.
+            </label>
+        </div>
+
+
+        <li>Choose something to eat:</li>
+        <select class="form-control" id="meal">
+          <option>Select One</option>
+          <option value="4">Pizza! And some beer or wine. It's always pizza party time.</option>
+          <option value="3">Clif bar. Some nuts and fruit. I'm probably on the go. I just need to fuel.</option>
+          <option value="1">Fresh caught fish, a tiki drink, some local veggies, enjoyed out under the sky.</option>
+          <option value="2">Cuisine that matches a culture I'm learning about. I like an immersive sensory expereince.</option>
+        </select>
+
+
+        <li>What is your dream vacation?</li>
+          <div class="radio">
+            <label>
+              <input type="radio" name="vacation" value="1" id="vacation">
+                            being on a remote paradise island
+            </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="vacation" value="2" id="vacation">
+                            Absorbing a new culture in a faraway land
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="vacation" value="3" id="vacation">
+                            Doing something adventurous and exciting to get my adrenaline going in a new place
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="vacation" value="4" id="vacation">
+                            Sitting on my couch watching Netflix
+                          </label>
+                        </div>
+
+        <div class="form-group">
+          <label for="color"><li>What is the color of your favorite fruit?</li></label>
+          <input id="color" class="form-control" type="color">
+        </div>
+        </ol>
+
+        <p>Lastly, please tell us your name:</p>
+          <div id="blanks">
+              <div class="form-group">
+                <label for="name"></label>
+                <input id="name" class="form-control" type="text">
+              </div>
+            </div>
+
+        <p class="hello">Great, <span class="name"></span>, it’s nice to meet you!</p>
+
+      <button type="submit" class="button">Get my vacation!</button>
+  </form>
+
+</div>
+
+
+
+  <!-- Results -->
+<div id="results">
+  <div id="snakeIsland">
+    <h1>You got… SNAKE ISLAND!</h1>
+    <p> Animals are beautiful, aren’t they, <span class="name"></span>? Ilha de Queimada Grande, Brazil: Off the shore of Brazil, almost due south of the heart of São Paulo, is a Ilha de Queimada Grande (Snake Island). The island is untouched by human developers, and for very good reason. Researchers estimate that on the island live between one and five snakes per square meter. That figure might not be so terrible if the snakes were, say, 2 inches long and nonvenomous. The snakes on Queimada Grande, however, are a unique species of pit viper, the golden lancehead. The lancehead genus of snakes is responsible for 90% of Brazilian snakebite-related fatalities. The golden lanceheads that occupy Snake Island grow to well over half a meter long, and they possess a powerful fast-acting poison that melts the flesh around their bites. This place is so dangerous that a permit is required to visit. Rad, right?</p>
+  </div>
+
+  <div id="yungasRoad">
+    <h1><span class="name"></span>! You got...YUNGAS ROAD in BOLIVIA!</h1>
+    <p>Like to live on the edge, huh? The North Yungas Road (Road of Death or Death Road) is a 61 kilometres (38 mi) or 69 kilometres (43 mi) road leading from La Paz to Coroico, 56 kilometres (35 mi) northeast of La Paz in the Yungas region of Bolivia. It is legendary for its extreme danger with estimates stating that 200 to 300 travelers are killed yearly along it. The road includes crosses marking many of the spots where vehicles have fallen. The road was built in the 1930s during the Chaco War by Paraguayan prisoners. It is one of the few routes that connects the Amazon rainforest region of northern Bolivia, or Yungas, to its capital city. Because of the extreme dropoffs of at least 600 metres (2,000 ft), single-lane width – most of the road no wider than 3.2 metres (10 ft) and lack of guard rails, the road is extremely dangerous. Further still, rain, fog and dust can make visibility precarious. In many places the road surface is muddy, and can loosen rocks from the road. It could be the adventure of a lifetime!</p>
+  </div>
+
+  <div id="alnwickPoisonGardens">
+    <h1><span class="name"></span>! You got… Alnwick Poison Gardens in England!</h1>
+    <p>Inspired by the Botanical Gardens in Padua, Italy (the first botanical garden which was created to grow medicinal and poisonous plants in the 1500s), the Alnwick Poison Garden is a garden devoted entirely to plants that can kill. It features many plants grown unwittingly in back gardens, and those that grow in the British countryside, as well as many more unusual varieties. Flame-shaped beds contain belladonna, tobacco and mandrake. The Alnwick Garden has a Home Office license to grow some very special plants; namely, cannabis and coca which are found behind bars in giant cages – for obvious reasons.</p>
+  </div>
+
+  <div id="home">
+    <h1>You got... Stay at home!</h1>
+    <p>Ok, <span class="name"></span>, why are you even taking this quiz? Nice try, but you're not looking for a vacation trip per se, you clearly just want a staycation in your own home. But that's fresh, too. If you need our permission, then consider your wish granted. Please proceed to the nearest couch cushion and have yourself a nice nap!</p>
+  </div>
+
+</div>
+
+<hr>
+    <div class="container3">
+      <div>
+        <p>Credit to: <a href="http://listverse.com/2010/03/22/top-10-places-you-dont-want-to-visit/" target="blank">Jamie Frater on ListVerse</a> for text for the Snake Island, Yungas Road, and Alnwick Poison Gardens results.</p>
+        <p>&copy; 2016 Soslandia</p>
+      </div>
+    </div>
+
+      <script src="http://code.jquery.com/jquery.js"></script>
+</div>
+  </body>
+</html>
