@@ -10,102 +10,108 @@
     <script src="js/jquery-1.12.2.js"></script>
     <script src="js/scripts.js"></script>
 
-  <title>Vacation Suggester</title>
+    <title>Vacation Suggester</title>
 
   </head>
 
   <body class="body1">
-    <div class="container1">
-    <h1>Need a vacation but not sure where to go? Fill out our survey and we’ll make a suggestion just for you based on your answers!</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Need a vacation but not sure where to go? Fill out our survey and we’ll make a suggestion just for you based on your answers!</h1>
 
-    <p>We want to make this experience feel personalized! This vacation suggestion is just for you!</p>
+        <p>We want to make this experience feel personalized! This vacation suggestion is just for you!</p>
+      </div>
+    </div>
 
 
 
-    <p>Ok, here goes!</p>
+
 
 
   <!-- Form Inputs -->
-  <div class="container2">
-    <form id="vacaySuggestion">
-      <ol>
-        <li><p>What sounds the most appealing to you right now?</p>
-          <select class="form-control" id="preference">
-            <option>Select One</option>
-            <option value="3">Hitting the gym. Yo, do you even lift, bro?</option>
-            <option value="4">Watching a movie or maybe even binging a TV show I've been meaning to get to</option>
-            <option value="2">Trivia! I like to know fun facts.</option>
-            <option value="1">Danger. It's my middle name. And it's exciting.</option>
-          </select>
-        </li>
+  <div class="container-fluid" id="space">
+    <div class="row">
+      <div class="col-md-6">
+        <form id="vacaySuggestion">
+          <p>Ok, here goes!</p>
+          <ol>
+            <li><p>What sounds the most appealing to you right now?</p>
+              <select class="form-control" id="preference">
+                <option>Select One</option>
+                <option value="3">Hitting the gym. Yo, do you even lift, bro?</option>
+                <option value="4">Watching a movie or maybe even binging a TV show I've been meaning to get to</option>
+                <option value="2">Trivia! I like to know fun facts.</option>
+                <option value="1">Danger. It's my middle name. And it's exciting.</option>
+              </select>
+            </li>
 
-        <li>What kind of activity have you been craving lately?</li>
-        <div class="radio">
-          <label>
-            <input type="radio" name="activity" value="2" id="activity">
-              Learning something new, like at a museum or interactive exhibit
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="activity" value="3" id="activity">
-            Doing something active! I love to be moving around!
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="activity" value="4" id="activity">
-            Bed. That's an activity, right?
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="activity" value="1" id="activity">
-            Being outdoors and in nature; getting out of the city.
-            </label>
-        </div>
-
-
-        <li>Choose something to eat:</li>
-        <select class="form-control" id="meal">
-          <option>Select One</option>
-          <option value="4">Pizza! And some beer or wine. It's always pizza party time.</option>
-          <option value="3">Clif bar. Some nuts and fruit. I'm probably on the go. I just need to fuel.</option>
-          <option value="1">Fresh caught fish, a tiki drink, some local veggies, enjoyed out under the sky.</option>
-          <option value="2">Cuisine that matches a culture I'm learning about. I like an immersive sensory expereince.</option>
-        </select>
+            <li>What kind of activity have you been craving lately?</li>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="activity" value="2" id="activity">
+                  Learning something new, like at a museum or interactive exhibit
+                  </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="activity" value="3" id="activity">
+                  Doing something active! I love to be moving around!
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="activity" value="4" id="activity">
+                  Bed. That's an activity, right?
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="activity" value="1" id="activity">
+                  Being outdoors and in nature; getting out of the city.
+                </label>
+              </div>
 
 
-        <li>What is your dream vacation?</li>
-          <div class="radio">
-            <label>
-              <input type="radio" name="vacation" value="1" id="vacation">
+            <li>Choose something to eat:</li>
+              <select class="form-control" id="meal">
+                <option>Select One</option>
+                <option value="4">Pizza! And some beer or wine. It's always pizza party time.</option>
+                <option value="3">Clif bar. Some nuts and fruit. I'm probably on the go. I just need to fuel.</option>
+                <option value="1">Fresh caught fish, a tiki drink, some local veggies, enjoyed out under the sky.</option>
+                <option value="2">Cuisine that matches a culture I'm learning about. I like an immersive sensory expereince.</option>
+              </select>
+
+
+            <li>What is your dream vacation?</li>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="vacation" value="1" id="vacation">
                             being on a remote paradise island
-            </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="vacation" value="2" id="vacation">
-                            Absorbing a new culture in a faraway land
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="vacation" value="3" id="vacation">
-                            Doing something adventurous and exciting to get my adrenaline going in a new place
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="vacation" value="4" id="vacation">
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="vacation" value="2" id="vacation">
+                  Absorbing a new culture in a faraway land
+                  </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="vacation" value="3" id="vacation">
+                  Doing something adventurous and exciting to get my adrenaline going in a new place
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="vacation" value="4" id="vacation">
                             Sitting on my couch watching Netflix
-                          </label>
-                        </div>
+                </label>
+              </div>
 
-        <div class="form-group">
-          <label for="color"><li>What is the color of your favorite fruit?</li></label>
-          <input id="color" class="form-control" type="color">
-        </div>
+              <div class="form-group">
+                <label for="color"><li>What is the color of your favorite fruit?</li></label>
+                <input id="color" class="form-control" type="color">
+              </div>
         </ol>
 
         <p>Lastly, please tell us your name:</p>
@@ -120,7 +126,7 @@
 
       <button type="submit" class="button">Get my vacation!</button>
   </form>
-
+</div>
 </div>
 
 

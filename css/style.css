@@ -1,5 +1,15 @@
 .body1 {
   background-color: #add8e6;
+  margin-top: 70px;
+}
+
+.container {
+  text-align: center;
+}
+
+#space {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 ​
 button {

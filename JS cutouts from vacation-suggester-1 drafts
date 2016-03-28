@@ -1,0 +1,97 @@
+\\* Copied out of Vacation-Suggester-1 from Monday March 28 at 8:19 am *\\
+
+$(document).ready(function() {
+  $("#blanks form").submit(function(event) {
+    var nameInput = $("input#name").val();
+    $("#name").text(nameInput);
+    event.preventDefault();
+
+    var score = 0;
+  $("form#vacaySuggestion").submit(function() {
+    event.preventDefault();
+
+    var snakeIsland = 0;
+    var alnwickPoisonGardens = 0;
+    var yungasRoad = 0;
+    var home = 0;
+
+    var preference = parseInt($("#preference").val());
+    var activity = parseInt($("input:radio[name=activity]:checked").val());
+    var meal = parseInt($("#meal").val());
+    var vacation = parseInt($("input:radio[name=vacation]:checked").val());
+
+    var score = function (preference, activity, meal, vacation) { return preference + activity + meal + vacation; };
+    score (preference, activity, meal, vacation);
+
+    $(".salutation").show();
+    $("#output").show();
+
+
+
+
+    if (score <= 4){
+      score = $("#snakeIsland").show();
+} else if (score > 4 && score < 8){
+      score = $("#alnwickPoisonGardens").show();
+} else if (score >= 9 && score < 12){
+      score = $("#yungasRoad").show();
+} else if (score >= 12 && score < 16){
+      score = $("#home").show();
+      }
+
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+Scratch from the weekend
+
+var points = 0;
+
+var result = parseInt($("#preference").val());
+points += result;
+result = parseInt($("#activity").val());
+points += result;
+result = parseInt($("#meal").val());
+points += result;
+result = parseInt($("#vacation").val());
+points += result;
+result = parseInt($("input:radio[name=country]:checked").val());
+points += result;
+
+
+$("#results").show();
+
+
+if (score <= 4){
+      $("#snakeIsland").show();
+} else {
+        $("#snakeIsland").hide();
+      }
+    if (score > 4 && score < 8){
+      $("#alnwickPoisonGardens").show();
+} else {
+        $("#alnwickPoisonGardens").hide();
+      }
+    if (score >= 9 && score < 12){
+      $("#yungasRoad").show();
+} else {
+        $("#yungasRoad").hide();
+      }
+    if (score >= 12 && score < 16){
+      $("#bed").show();
+} else {
+        $("#bed").hide();
+      }
+
+
+<div id="results">
