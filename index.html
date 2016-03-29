@@ -1,6 +1,5 @@
 <!DOCTYPE html>
   <head>
-
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" media="screen">
@@ -9,33 +8,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/jquery-1.12.2.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <title>Vacation Suggester</title>
-
   </head>
 
   <body class="body1">
+    <div>
+      <div class="title">Vacation Suggester</div>
+    </div>
     <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <!--Item 1-->
+          <div class="item active">
+            <img src="img/poisonGarden_Carousel.jpg" alt="Poison Garden" class="img-responsive">
+            <div class="carousel-caption">
+              <p class="CaroFont">Think the international Rose Test Garden is nice but just</p>
+              <p>NOT EXTREME ENOUGH?!</p>
+            </div>
+          </div>
+          <!--Item 2-->
+          <div class="item">
+            <img src="img/snakeIsland_Carousel.jpg" alt="Snake Island" class="img-responsive">
+            <div class="carousel-caption">
+              <p>Feel like scuba diving is fun, but scuba diving with loads of poisonous watersnakes is </p>
+              <p>WAY BETTER?!</p>
+            </div>
+          </div>
+        <!--Item 3-->
+          <div class="item">
+            <img src="img/yungasRoad_Carousel.jpg" alt="Yungas Road" class="img-responsive">
+            <div class="carousel-caption">
+              <p>Looking for a nice Sunday drive ... with a deadly drop off that's made even basejumpers cry?!</p>
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+        <!--Jumbotron text-->
       <div class="jumbotron">
         <h2>Need a vacation but not sure where to go? Fill out our survey and we’ll make a suggestion just for you based on your answers!</h2>
-
+        <hr>
         <p>We want to make this experience feel personalized! This vacation suggestion is just for you!</p>
+        <hr>
+        <h2>Ok, here goes!</h2>
       </div>
     </div>
-
-
-
-
-
 
   <!-- Form Inputs -->
   <div class="container2">
 
-  <!--        <div id="blanks">-->
         <form>
           <div class="row">
             <div class="col-md-6">
-          <p>Ok, here goes!</p>
+
           <ol>
             <li>What sounds the most appealing to you right now?</li>
               <select class="form-control" id="preference">
@@ -123,19 +166,13 @@
         <p>Lastly, please tell us your name:</p>
 
               <div class="form-group">
-<!--                <label for="name"></label>-->
                 <input id="name" class="form-control" type="text">
               </div>
             </div>
           </div>
 
-
           <button type="submit" class="btn btn-lg btn-success center-block">Get my vacation!</button>
-
-
-          </form>
-
-
+        </form>
     </div>
 
 
@@ -144,27 +181,38 @@
   <!-- Results -->
 <div class="container results">
   <div class="greeting">
-    <p>Great, <span class="name"></span>, it’s nice to meet you!</p>
+    <h1>Great, <span class="name"></span>, it’s nice to meet you!</h1>
   </div>
 
-  <div id="snakeIsland" class="hidden-character">
-    <h1>You got… SNAKE ISLAND!</h1>
-    <p> Animals are beautiful, aren’t they, <span class="name"></span>? Ilha de Queimada Grande, Brazil: Off the shore of Brazil, almost due south of the heart of São Paulo, is a Ilha de Queimada Grande (Snake Island). The island is untouched by human developers, and for very good reason. Researchers estimate that on the island live between one and five snakes per square meter. That figure might not be so terrible if the snakes were, say, 2 inches long and nonvenomous. The snakes on Queimada Grande, however, are a unique species of pit viper, the golden lancehead. The lancehead genus of snakes is responsible for 90% of Brazilian snakebite-related fatalities. The golden lanceheads that occupy Snake Island grow to well over half a meter long, and they possess a powerful fast-acting poison that melts the flesh around their bites. This place is so dangerous that a permit is required to visit. Rad, right?</p>
+  <div id="snakeIsland" class="hidden-1">
+    <h2>You got...</h2>
+      <h1>SNAKE ISLAND!</h1>
+    <p>Animals are beautiful, aren’t they, <span class="name"></span>? Ilha de Queimada Grande, Brazil: Off the shore of Brazil, almost due south of the heart of São Paulo, is a Ilha de Queimada Grande (Snake Island). The island is untouched by human developers, and for very good reason. Researchers estimate that on the island live between one and five snakes per square meter. That figure might not be so terrible if the snakes were, say, 2 inches long and nonvenomous.</p>
+    <p>The snakes on Queimada Grande, however, are a unique species of pit viper, the golden lancehead. The lancehead genus of snakes is responsible for 90% of Brazilian snakebite-related fatalities. The golden lanceheads that occupy Snake Island grow to well over half a meter long, and they possess a powerful fast-acting poison that melts the flesh around their bites. This place is so dangerous that a permit is required to visit. Rad, right?</p>
+      <img src="img/snakeIsland_Carousel.jpg" alt="Snake Island" class="img-responsive"/>
   </div>
 
-  <div id="yungasRoad" class="hidden-destination1">
-    <h1><span class="name"></span>! You got...YUNGAS ROAD in BOLIVIA!</h1>
+  <div id="yungasRoad" class="hidden-2">
+    <h1><span class="name"></span>!</h1>
+      <h2>You got...</h2>
+      <h1>YUNGAS ROAD in BOLIVIA!</h1>
     <p>Like to live on the edge, huh? The North Yungas Road (Road of Death or Death Road) is a 61 kilometres (38 mi) or 69 kilometres (43 mi) road leading from La Paz to Coroico, 56 kilometres (35 mi) northeast of La Paz in the Yungas region of Bolivia. It is legendary for its extreme danger with estimates stating that 200 to 300 travelers are killed yearly along it. The road includes crosses marking many of the spots where vehicles have fallen. The road was built in the 1930s during the Chaco War by Paraguayan prisoners. It is one of the few routes that connects the Amazon rainforest region of northern Bolivia, or Yungas, to its capital city. Because of the extreme dropoffs of at least 600 metres (2,000 ft), single-lane width – most of the road no wider than 3.2 metres (10 ft) and lack of guard rails, the road is extremely dangerous. Further still, rain, fog and dust can make visibility precarious. In many places the road surface is muddy, and can loosen rocks from the road. It could be the adventure of a lifetime!</p>
+    <img src="img/yungasRoad_Carousel.jpg" alt="Yungas Road" class="img-responsive"/>
   </div>
 
-  <div id="alnwickPoisonGardens" class="hidden-destination3">
-    <h1><span class="name"></span>! You got… Alnwick Poison Gardens in England!</h1>
+  <div id="alnwickPoisonGardens" class="hidden-3">
+    <h1><span class="name"></span>!
+      <h2>You got...</h2>
+      <h1>Alnwick Poison Gardens in England!</h1>
     <p>Inspired by the Botanical Gardens in Padua, Italy (the first botanical garden which was created to grow medicinal and poisonous plants in the 1500s), the Alnwick Poison Garden is a garden devoted entirely to plants that can kill. It features many plants grown unwittingly in back gardens, and those that grow in the British countryside, as well as many more unusual varieties. Flame-shaped beds contain belladonna, tobacco and mandrake. The Alnwick Garden has a Home Office license to grow some very special plants; namely, cannabis and coca which are found behind bars in giant cages – for obvious reasons.</p>
+      <img src="img/poisonGarden.jpg" alt="Poison Garden" class="img-responsive"/>
   </div>
 
-  <div id="home" class="hidden-destination3">
-    <h1>You got... Stay at home!</h1>
+  <div id="home" class="hidden-4">
+    <h2>You got...</h2>
+      <h1>Stay at home!</h1>
     <p>Ok, <span class="name"></span>, why are you even taking this quiz? Nice try, but you're not looking for a vacation trip per se, you clearly just want a staycation in your own home. But that's fresh, too. If you need our permission, then consider your wish granted. Please proceed to the nearest couch cushion and have yourself a nice nap!</p>
+      <img src="img/bed.jpg" alt="puppy in bed" class="img-responsive"/>
   </div>
 </div>
 </div>
